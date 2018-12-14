@@ -1,16 +1,16 @@
-import { ComponentFixture, TestBed, async } from '@angular/core/testing';
-import { WeatherService } from '../weather/weather.service';
-import { WeatherServiceFake } from '../weather/weather.service.fake';
-import { CurrentWeatherComponent } from './current-weather.component';
+import { ComponentFixture, TestBed, async } from "@angular/core/testing";
+import { WeatherService } from "../weather/weather.service";
+import { WeatherServiceFake } from "../weather/weather.service.fake";
+import { CurrentWeatherComponent } from "./current-weather.component";
 
-describe('CurrentWeatherComponent', () => {
+describe("CurrentWeatherComponent", () => {
   let component: CurrentWeatherComponent;
   let fixture: ComponentFixture<CurrentWeatherComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [CurrentWeatherComponent],
-      providers: [{ provide: WeatherService, useClass: WeatherServiceFake }],
+      providers: [{ provide: WeatherService, useClass: WeatherServiceFake }]
     }).compileComponents();
   }));
 
@@ -20,7 +20,7 @@ describe('CurrentWeatherComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

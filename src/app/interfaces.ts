@@ -1,4 +1,4 @@
-export interface  ICurrentWeather {
+export interface ICurrentWeather {
   city: string;
   country: string;
   date: number;
